@@ -1,152 +1,178 @@
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5faff;
-      color: #333;
-    }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5faff;
+  color: #333;
+}
 
-    header {
-      background-color: #0066cc;
-      color: white;
-      padding: 10px 0;
-    }
+/* Header & Navbar */
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 0;
+  position: sticky; /* navbar tetap di atas saat scroll */
+  top: 0;
+  z-index: 1000;
+}
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%;
-      margin: auto;
-    }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
+nav h1 {
+  margin: 0;
+  font-size: 20px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
 
-    nav a.active, nav a:hover {
-      text-decoration: underline;
-    }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-    section {
-      padding: 20px;
-      width: 90%;
-      margin: auto;
-    }
+nav ul li a.active,
+nav ul li a:hover {
+  color: #ffcc00;
+  text-decoration: none;
+}
 
-    .tentang a, .foto a {
-      display: block;
-      margin-top: 10px;
-      color: #0066cc;
-      text-decoration: none;
-    }
+/* Section umum */
+section {
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
 
-    .tentang a:hover, .foto a:hover {
-      text-decoration: underline;
-    }
+/* Link tambahan */
+.tentang a,
+.foto a {
+  display: block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+}
 
-    .foto img {
-      width: 80%;
-      max-width: 600px;
-      border-radius: 10px;
-      display: block;
-      margin: 10px auto;
-    }
+.tentang a:hover,
+.foto a:hover {
+  text-decoration: underline;
+}
 
-    .tabel table {
-      width: 80%;
-      margin: 20px auto;
-      border-collapse: collapse;
-    }
+/* Gambar */
+.foto img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
 
-    .tabel th, .tabel td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-    }
+/* Tabel */
+.tabel table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
 
-    .tabel th {
-      background-color: #0066cc;
-      color: white;
-    }
+.tabel th,
+.tabel td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
 
-    form {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 12px 15px;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 80%;
-      margin: 20px auto;
-    }
+.tabel th {
+  background-color: #0066cc;
+  color: white;
+}
 
-    form label {
-      text-align: right;
-      font-weight: bold;
-    }
+/* Form */
+form {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 12px 15px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
 
-    form input, form select {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+form label {
+  text-align: right;
+  font-weight: bold;
+}
 
-    .buttons {
-      grid-column: span 2;
-      text-align: center;
-      margin-top: 10px;
-    }
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    .buttons button {
-      padding: 10px 20px;
-      margin: 0 5px;
-      background-color: #0066cc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+.buttons {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 10px;
+}
 
-    .buttons button:hover {
-      background-color: #004c99;
-    }
+.buttons button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-    footer {
-      background-color: #0066cc;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-    .galeri {
-    text-align: center;
-    padding: 20px;
+.buttons button:hover {
+  background-color: #004c99;
+}
+
+/* Galeri */
+.galeri {
+  text-align: center;
+  padding: 20px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .card img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .card p {
-    font-weight: bold;
-    margin-top: 5px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
-
+/* Footer */
+footer {
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
