@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Kapal Bangka Palembang</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Pemesanan Tiket Kapal</h1>
-    </nav>
-  </header>
+  <nav>
+    <h1>Pemesanan Tiket Kapal</h1>
+    <ul>
+      <li><a href="#home" class="active">Beranda</a></li>
+      <li><a href="#jadwal">Jadwal</a></li>
+      <li><a href="#form">Form Pemesanan</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section class="galeri">
-        <h2>Galeri Kapal</h2>
-        <div class="grid">
+<section id="home" class="galeri">
+  <h2>Galeri Kapal</h2>
+  <div class="grid">
             <div class="card">
-                <img src="d:\tugas devin pwd\KM DHARMA KARTIKA 8.jpg" alt="KMP DHARMA KOSALA">
+                <img src="KM DHARMA KARTIKA 8.jpg" alt="KMP DHARMA KOSALA">
                 <p>KMP DHARMA KOSALA</p>
             </div>
             <div class="card">
-                <img src="d:\tugas devin pwd\MUTIARA PERTIWI 3.jpg" alt="MUTIARA PERTIWI 3">
+                <img src="d:MUTIARA PERTIWI 3.jpg" alt="MUTIARA PERTIWI 3">
                 <p>MUTIARA PERTIWI 3</p>
             </div>
             <div class="card">
-                <img src="d:\tugas devin pwd\KMP DHARMA KOSALA.jpg" alt="KM DHARMA KARTIKA 8">
+                <img src="d:KMP DHARMA KOSALA.jpg" alt="KM DHARMA KARTIKA 8">
                 <p>KM DHARMA KARTIKA 8</p>
             </div>
             <div class="card">
-                <img src="d:\tugas devin pwd\KMP BALANAK.jpg" alt="KMP BALANAK">
+                <img src="d:MUTIARA PERTIWI 3.jpg" alt="KMP BALANAK">
                 <p>KMP BALANAK</p>
             </div>
         </div>
-    </section>
+</section>
 
-  <section class="tabel">
-    <h2>Tabel Informasi Jadwal Kapal</h2>
-    <div class="grid">
+<section id="jadwal" class="tabel">
+  <h2>Tabel Informasi Jadwal Kapal</h2>
+  <div class="grid">
     <table>
       <tr>
         <th>Rute</th>
@@ -58,35 +63,31 @@
         <td>Rp175.000</td>
       </tr>
       <tr>
-<td>Bangka - Lampung</td>
-<td>Senin - Jumat</td>
-<td>09.00 - 17.00</td>
-<td>Rp500.000</td>
-</tr>
-<tr>
-<td>Bangka - Lampung</td>
-<td>Saptu - Minggu</td>
-<td>07.00 - 18.00</td>
-<td>Rp1.000.000</td>
-</tr>
-
-
+        <td>Bangka - Lampung</td>
+        <td>Senin - Jumat</td>
+        <td>09.00 - 17.00</td>
+        <td>Rp500.000</td>
+      </tr>
+      <tr>
+        <td>Bangka - Lampung</td>
+        <td>Saptu - Minggu</td>
+        <td>07.00 - 18.00</td>
+        <td>Rp1.000.000</td>
+      </tr>
       </tr>
     </table>
     </div>
-  </section>
+</section>
 
-  <section class="form-section">
-    <h2>Form Pemesanan</h2>
-    <div class="grid">
+<section id="form" class="form-section">
+  <h2>Form Pemesanan</h2>
+  <div class="grid">
     <form>
       <label for="nama">Nama Lengkap:</label>
       <input type="tel" required placeholder="Sesuai KTP">
 
       <label for="No Hp ">Nomor Hp</label>
       <input type="tel" required placeholder="08xxxxxxxxxx">
-      
-    
 
       <label for="email">Email:</label>
       <input type="tel" required placeholder="@dxxpp">
@@ -99,8 +100,6 @@
         <option>Lampung - Bangka</option>
       </select>
 
-     
-
       <label for="alamat">Alamat:</label>
       <input type="tel" required placeholder="Sungailiat">
 
@@ -110,7 +109,7 @@
       </div>
     </form>
     </div>
-  </section>
+</section>
 
   <footer>
     <p>Copyright 2026 | Pemrograman Web Dasar</p>
